@@ -89,8 +89,7 @@ ul {
   padding-left: 24px;
 }
 
-.menu__navigation-link,
-.menu__navigation-link:visited {
+.menu__navigation-link {
   position: relative;
   text-decoration: none;
   color: black;
@@ -117,6 +116,14 @@ ul {
 
 .menu__navigation-link:hover::before,
 .menu__navigation-link:active::before {
+  transform: translateX(-50%);
+}
+
+.menu__navigation-link--active {
+  color: #7e7e82;
+}
+
+.menu__navigation-link--active::before {
   transform: translateX(-50%);
 }
 
