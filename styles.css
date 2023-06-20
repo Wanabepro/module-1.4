@@ -29,3 +29,150 @@
   font-weight: bold;
   font-style: normal;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 100vh;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.menu__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 23px 24px 0 24px;
+  margin-bottom: 50px;
+}
+
+.menu__close-button,
+.menu__search-button {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu__logo {
+  margin-right: auto;
+}
+
+.menu__navigation {
+  flex-grow: 1;
+}
+
+.menu__navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-left: 24px;
+}
+
+.menu__navigation-link,
+.menu__navigation-link:visited {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  transition: all 200ms;
+}
+
+.menu__navigation-link:hover,
+.menu__navigation-link:active {
+  color: #7e7e82;
+}
+
+.menu__navigation-link::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #41f6d7;
+  left: -24px;
+  transform: translateX(-101%);
+  transition: all 200ms;
+}
+
+.menu__navigation-link:hover::before,
+.menu__navigation-link:active::before {
+  transform: translateX(-50%);
+}
+
+.menu__footer {
+  padding: 0 24px 32px 24px;
+}
+
+.menu__contacts {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.menu__contact-button {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu__email,
+.menu__phone {
+  color: black;
+  text-decoration: none;
+}
+
+.menu__email {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.menu__phone {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.menu__languages {
+  display: flex;
+  gap: 7px;
+}
+
+.menu__language {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.menu__language:hover {
+  color: #7e7e82;
+}
+
+.menu__language--active {
+  color: #7e7e82;
+}

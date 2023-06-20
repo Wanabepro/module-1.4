@@ -3,7 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>CPS Company</title>
   </head>
-  <body></body>
+  <body>
+    <section class="menu">
+      <header class="menu__header">
+        <button class="menu__close-button">
+          <img src="./assets/images/burger.svg" alt="закрыть меню" />
+        </button>
+        <img class="menu__logo" src="./assets/images/logo.svg" alt="логотип" />
+        <button class="menu__search-button">
+          <img src="./assets/images/search.svg" alt="поиск" />
+        </button>
+      </header>
+      <nav class="menu__navigation">
+        <ul class="menu__navigation-list">
+          <li class="menu__navigation-item">
+            <a href="#" class="menu__navigation-link">Ремонт техники</a>
+          </li>
+          <li class="menu__navigation-item">
+            <a href="#" class="menu__navigation-link">Услуги и сервисы</a>
+          </li>
+          <li class="menu__navigation-item">
+            <a href="#" class="menu__navigation-link">Корпоративным клиентам</a>
+          </li>
+          <li class="menu__navigation-item">
+            <a href="#" class="menu__navigation-link">Продавцам техники</a>
+          </li>
+          <li class="menu__navigation-item">
+            <a href="#" class="menu__navigation-link">Партнерам</a>
+          </li>
+          <li class="menu__navigation-item">
+            <a href="#" class="menu__navigation-link">Производителям</a>
+          </li>
+          <li class="menu__navigation-item">
+            <a href="#" class="menu__navigation-link">Наши сервисные центры</a>
+          </li>
+          <li class="menu__navigation-item">
+            <a href="#" class="menu__navigation-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <footer class="menu__footer">
+        <ul class="menu__contacts">
+          <li class="menu__contact-item">
+            <button class="menu__contact-button">
+              <img src="./assets/images/call.svg" alt="позвонить" />
+            </button>
+          </li>
+          <li class="menu__contact-item">
+            <button class="menu__contact-button">
+              <img src="./assets/images/chat.svg" alt="написать" />
+            </button>
+          </li>
+          <li class="menu__contact-item">
+            <button class="menu__contact-button">
+              <img src="./assets/images/profile.svg" alt="профиль" />
+            </button>
+          </li>
+        </ul>
+        <a class="menu__email" href="mailto: mail@cps.com">mail@cps.com</a>
+        <br />
+        <a class="menu__phone" href="tel: 88008908900">88008908900</a>
+        <ul class="menu__languages">
+          <li class="menu__languages-item">
+            <button class="menu__language menu__language--active">RU</button>
+          </li>
+          <li class="menu__languages-item">
+            <button class="menu__language">EN</button>
+          </li>
+          <li class="menu__languages-item">
+            <button class="menu__language">CH</button>
+          </li>
+        </ul>
+      </footer>
+    </section>
+  </body>
 </html>
