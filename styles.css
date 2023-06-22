@@ -51,7 +51,7 @@ ul {
   display: flex;
   flex-direction: column;
   width: 320px;
-  min-height: 100vh;
+  height: 100vh;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
     16px 0px 52px rgba(14, 24, 80, 0.2);
 }
@@ -80,6 +80,14 @@ ul {
 
 .menu__navigation {
   flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.menu__navigation::-webkit-scrollbar {
+  display: none;
 }
 
 .menu__navigation-list {
