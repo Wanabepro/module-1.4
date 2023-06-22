@@ -96,6 +96,10 @@ ul {
   transition: all 200ms;
 }
 
+.menu__navigation-link:focus-visible {
+  outline: none;
+}
+
 .menu__navigation-link:hover,
 .menu__navigation-link:active,
 .menu__navigation-link:focus {
