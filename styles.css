@@ -97,7 +97,8 @@ ul {
 }
 
 .menu__navigation-link:hover,
-.menu__navigation-link:active {
+.menu__navigation-link:active,
+.menu__navigation-link:focus {
   color: #7e7e82;
 }
 
@@ -115,7 +116,8 @@ ul {
 }
 
 .menu__navigation-link:hover::before,
-.menu__navigation-link:active::before {
+.menu__navigation-link:active::before,
+.menu__navigation-link:focus::before {
   transform: translateX(-50%);
 }
 
